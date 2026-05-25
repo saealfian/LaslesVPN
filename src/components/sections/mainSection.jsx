@@ -1,65 +1,46 @@
+import playStore from "../../assets/playStore.png";
+import appleStore from "../../assets/appleStore.png";
+import mainImage from "../../assets/mainImage.png";
+
 function MainSection() {
-  return (
-      <div className="mainSection">
-        <div className="mainSectionLeft">
-          <h1 className="mainSectionTitle">
-            The Best Way <br /> To Save & Invest
-          </h1>
-          <div className="mainSectionText">
-            Piggyvest help over 3 million customer achieve their financial{" "}
-            <br /> goal by helping them save and invest with ease
-          </div>
-          <button className="buttonCreateAccount">Create Free Account</button>
-          <div className="buttonDownloadGroup">
-            <button className="buttonDownload">
-              <div>
-                <img src="/src/assets/appleStore.png" alt="" />
-              </div>
-              <div className="buttonDownloadText">Get on Iphone</div>
-            </button>
-            <button className="buttonDownload">
-              <div>
-                <img src="/src/assets/playStore.png" alt="" srcset="" />
-              </div>
-              <div className="buttonDownloadText">Get on Android</div>
-            </button>
-          </div>
+    return (
+
+        <div className="mainSection">
+            <div className="mainSectionLeft">
+                <h1 className="mainSectionTitle">The Best Way <br /> To Save & Invest</h1>
+                <div className="mainSectionText">Piggyvest help over 3 million customer achieve their financial <br /> goal by helping them save and invest with ease</div>
+                <button className="buttonCreateAccount">Create Free Account</button>
+                <div className="buttonDownloadGroup">
+                    <button className="buttonDownload">
+                        <div><img src={appleStore} alt="Apple Store" /></div>
+                        <div className="buttonDownloadText">Get on Iphone</div>
+                    </button>
+                    <button className="buttonDownload">
+                        <div><img src={playStore} alt="Play Store" /></div>
+                        <div className="buttonDownloadText">Get on Android</div>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src={mainImage} alt="main image" srcset="" className="mainImage" />
+            </div>
+            <div className="mainSectionMobile">
+                <h1 className="mainSectionTitle">The Best Way <br /> To Save & Invest</h1>
+                <div className="mainSectionText">Piggyvest help over 3 million customer <br />achieve their financial goal by helping <br />them save and invest with ease</div>
+                <button className="buttonGetStarted">Get Started</button>
+                <div className="buttonDownloadGroup">
+                    <button className="buttonDownload">
+                        <div><img src={appleStore} alt="Apple Store" /></div>
+                        <div className="buttonDownloadText">Get on Iphone</div>
+                    </button>
+                    <button className="buttonDownload">
+                        <div><img src={playStore} alt="Play Store" /></div>
+                        <div className="buttonDownloadText">Get on Android</div>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div>
-          <img
-            src="/src/assets/mainImage.png"
-            alt="main image"
-            srcset=""
-            className="mainImage"
-          />
-        </div>
-        <div className="mainSectionMobile">
-          <h1 className="mainSectionTitle">
-            The Best Way <br /> To Save & Invest
-          </h1>
-          <div className="mainSectionText">
-            Piggyvest help over 3 million customer <br />
-            achieve their financial goal by helping <br />
-            them save and invest with ease
-          </div>
-          <button className="buttonGetStarted">Get Started</button>
-          <div className="buttonDownloadGroup">
-            <button className="buttonDownload">
-              <div>
-                <img src="/src/assets/appleStore.png" alt="" />
-              </div>
-              <div className="buttonDownloadText">Get on Iphone</div>
-            </button>
-            <button className="buttonDownload">
-              <div>
-                <img src="/src/assets/playStore.png" alt="" srcset="" />
-              </div>
-              <div className="buttonDownloadText">Get on Android</div>
-            </button>
-          </div>
-        </div>
-      </div>
-  );
+    )
 }
 
-export default MainSection
+export default MainSection;
